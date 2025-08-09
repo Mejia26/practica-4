@@ -102,7 +102,7 @@ public class RegisterTest extends BaseTest {
         ));
     }
 
-    // ✅ Camino feliz
+    // Camino feliz
     @Test
     public void registerHappyPath_createsAccountSuccessfully() {
         ensureLoggedOut();
@@ -129,7 +129,7 @@ public class RegisterTest extends BaseTest {
         deleteAccountIfVisible();
     }
 
-    // 🚫 Negativa: email existente
+    // Negativa: email existente
     @Test
     public void registerWithExistingEmail_showsError() {
         ensureLoggedOut();
@@ -144,7 +144,7 @@ public class RegisterTest extends BaseTest {
         assertTrue(err.isDisplayed());
     }
 
-    // ⚠️ Límite: nombre de 255 chars
+    // Límite: nombre de 255 chars
     @Test
     public void registerWithLongName_limit255() {
         ensureLoggedOut();

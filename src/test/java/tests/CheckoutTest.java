@@ -105,7 +105,7 @@ public class CheckoutTest extends BaseTest {
         ));
     }
 
-    // ✅ Camino feliz
+    // Camino feliz
     @Test
     public void completeCheckoutSuccessfully() {
         loginIfNeeded();
@@ -118,7 +118,7 @@ public class CheckoutTest extends BaseTest {
         assertTrue(true);
     }
 
-    // 🚫 Negativa
+    // Negativa
     @Test
     public void checkoutWithoutProductsShouldFail() {
         loginIfNeeded();
@@ -133,7 +133,7 @@ public class CheckoutTest extends BaseTest {
                 "No debería mostrarse 'Proceed To Checkout' con carrito vacío");
     }
 
-    // ⚠️ Límite
+    // Límite
     @Test
     public void checkoutWithLongNameOnCardShouldWork() {
         loginIfNeeded();

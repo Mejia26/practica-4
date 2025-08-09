@@ -111,7 +111,7 @@ public class UpdateCartTest extends BaseTest {
         return Integer.parseInt(qtyBtn.getText().trim());
     }
 
-    // ✅ Camino feliz: actualizar cantidad sumando el mismo producto
+    // camino feliz: actualizar cantidad sumando el mismo producto
     @Test
     public void updateQuantityHappyPath() {
         goToProducts();
@@ -121,7 +121,7 @@ public class UpdateCartTest extends BaseTest {
         assertEquals(2, getCartQuantity(), "La cantidad en el carrito debe ser 2 después de actualizar.");
     }
 
-    // 🚫 Negativa: intentar actualizar cantidad con carrito vacío (no debe haber qty)
+    // Negativa: intentar actualizar cantidad con carrito vacío (no debe haber qty)
     @Test
     public void updateQuantityWithEmptyCartShouldFail() {
         // Ya está vacío por @BeforeEach
@@ -130,7 +130,7 @@ public class UpdateCartTest extends BaseTest {
         assertFalse(hasQty, "No debería haber cantidad visible con el carrito vacío.");
     }
 
-    // ⚠️ Límite: intentar subir cantidad alta (ej. 10) y validar comportamiento
+    // Límite: intentar subir cantidad alta (ej. 10) y validar comportamiento
     @Test
     public void updateQuantityLimitToTen() {
         goToProducts();

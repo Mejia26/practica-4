@@ -35,7 +35,7 @@ public class LoginTest extends BaseTest {
                 By.cssSelector("input[data-qa='login-email']")));
     }
 
-    // ✅ Camino feliz
+    // Camino feliz
     @Test
     public void loginHappyPath_succeeds() {
         ensureLoggedOut();
@@ -49,7 +49,7 @@ public class LoginTest extends BaseTest {
                 By.linkText("Logout"))).isDisplayed());
     }
 
-    // 🚫 Negativa: contraseña incorrecta
+    // Negativa: contraseña incorrecta
     @Test
     public void loginWithWrongPassword_showsError() {
         ensureLoggedOut();
@@ -63,7 +63,7 @@ public class LoginTest extends BaseTest {
                 "Debe mostrar mensaje de credenciales incorrectas");
     }
 
-    // ⚠️ Límite: email muy largo
+    // Límite: email muy largo
     @Test
     public void loginWithVeryLongEmail_limit() {
         ensureLoggedOut();

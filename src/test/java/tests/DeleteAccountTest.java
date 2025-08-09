@@ -98,7 +98,7 @@ public class DeleteAccountTest extends BaseTest {
     // -------------------- Tests --------------------
 
     /**
-     * ✅ Camino feliz: crear cuenta temporal y eliminarla.
+     * Camino feliz: crear cuenta temporal y eliminarla.
      */
     @Test
     public void deleteAccountHappyPath() {
@@ -111,7 +111,7 @@ public class DeleteAccountTest extends BaseTest {
     }
 
     /**
-     * 🚫 Negativa: sin login no debe existir la opción de eliminar cuenta.
+     * Negativa: sin login no debe existir la opción de eliminar cuenta.
      */
     @Test
     public void deleteAccountWithoutLoginShouldNotBeVisible() {
@@ -126,7 +126,7 @@ public class DeleteAccountTest extends BaseTest {
     }
 
     /**
-     * ⚠️ Límite: eliminar y luego intentar usar la cuenta de nuevo (no debería permitir login).
+     * ⚠ímite: eliminar y luego intentar usar la cuenta de nuevo (no debería permitir login).
      */
     @Test
     public void deleteAccountThenLoginAgainShouldFail() {

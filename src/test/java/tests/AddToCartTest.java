@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 public class AddToCartTest extends BaseTest {
 
     /**
-     * ✅ Camino feliz: Agrega producto exitosamente al carrito
+     * Camino feliz: Agrega producto exitosamente al carrito
      */
     @Test
     public void addProductToCartSuccessfully() {
@@ -40,7 +40,7 @@ public class AddToCartTest extends BaseTest {
     }
 
     /**
-     * 🚫 Prueba negativa: Intentar agregar producto sin iniciar sesión
+     * Prueba negativa: Intentar agregar producto sin iniciar sesión
      */
     @Test
     public void addProductWithoutLoginShouldStillWork() {
@@ -62,7 +62,7 @@ public class AddToCartTest extends BaseTest {
     }
 
     /**
-     * ⚠️ Prueba de límite: Agregar el mismo producto 10 veces y verificar si se refleja en el carrito
+     * Prueba de límite: Agregar el mismo producto 10 veces y verificar si se refleja en el carrito
      */
     @Test
     public void addProductMultipleTimesLimitTest() {
