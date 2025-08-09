@@ -1,0 +1,11 @@
+tests\RegisterTest.class
+tests\DeleteAccountTest.class
+reporting\ExtentManager.class
+tests\AddToCartTest.class
+reporting\ExtentReportListener.class
+tests\CheckoutTest.class
+tests\BaseTest.class
+reporting\ScreenshotUtil.class
+tests\LoginTest.class
+tests\TestReportManager.class
+tests\UpdateCartTest.class
