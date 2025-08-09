@@ -1,0 +1,14 @@
+# Maven / Build
+target/*
+!target/reports/
+
+# IDE
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
